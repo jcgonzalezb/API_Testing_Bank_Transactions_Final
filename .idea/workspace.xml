@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="New class created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Globant/reporting/Reporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Listener installed">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/site.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +38,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\juancamilo.gonzalez\IdeaProjects\API_Testing_Bank_Transactions_Final\src\test" />
@@ -56,7 +54,7 @@
       <recent name="org.Globant.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EndpointEmptyTest">
+  <component name="RunManager" selected="TestNG.C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Testing_Bank_Transactions_Final" />
       <extension name="coverage">
@@ -88,6 +86,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="API_Testing_Bank_Transactions_Final" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EndpointEmptyTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API_Testing_Bank_Transactions_Final" />
       <extension name="coverage">
@@ -105,10 +113,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EndpointEmptyTest.getUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="API_Testing_Bank_Transactions_Final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Globant.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.Globant.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.Globant.tests.EndpointEmptyTest" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml" />
         <item itemvalue="TestNG.EndpointEmptyTest" />
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="TestNG.EndpointEmptyTest.getUser" />
         <item itemvalue="JUnit.AppTest.testApp" />
       </list>
     </recent_temporary>
@@ -143,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669243050559</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="log4 properly installed">
+      <created>1669243802324</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669243802324</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Listener installed">
+      <created>1669244235075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669244235075</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +202,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="New class created" />
-    <option name="LAST_COMMIT_MESSAGE" value="New class created" />
+    <MESSAGE value="log4 properly installed" />
+    <MESSAGE value="Listener installed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listener installed" />
   </component>
 </project>
