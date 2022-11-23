@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Globant/endpoints/BankTransactions.java" afterDir="false" />
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="New class created">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Globant/reporting/Reporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/site.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +48,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\juancamilo.gonzalez\IdeaProjects\API_Testing_Bank_Transactions_Final\src\test" />
+      <recent name="C:\Users\juancamilo.gonzalez\IdeaProjects\API_Testing_Bank_Transactions_Final\src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.Globant.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="TestNG.EndpointEmptyTest">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Testing_Bank_Transactions_Final" />
       <extension name="coverage">
@@ -100,8 +107,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="TestNG.EndpointEmptyTest" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.testApp" />
       </list>
     </recent_temporary>
@@ -129,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669242858190</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New class created">
+      <created>1669243050559</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669243050559</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="New class created" />
+    <option name="LAST_COMMIT_MESSAGE" value="New class created" />
   </component>
 </project>
