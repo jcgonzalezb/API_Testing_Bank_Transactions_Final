@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Testing delete all transactions">
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Java faker implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Globant/reporting/Reporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Globant/reporting/Reporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/endpoints/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/endpoints/BankTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +243,35 @@
       <option name="project" value="LOCAL" />
       <updated>1669310971784</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Testing delete all transactions">
+      <created>1669312215891</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669312215891</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Testing delete all transactions">
+      <created>1669312461516</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669312461516</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Create transaction method created">
+      <created>1669323052100</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669323052100</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Java faker implemented">
+      <created>1669328432046</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669328432046</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +298,9 @@
     <MESSAGE value="deleteTransaction method fixed" />
     <MESSAGE value="BankTransaction class renamed" />
     <MESSAGE value="Testing delete all transactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing delete all transactions" />
+    <MESSAGE value="Create transaction method created" />
+    <MESSAGE value="Java faker implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java faker implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

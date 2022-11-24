@@ -21,8 +21,7 @@ public class BankTransaction {
     /**
      * Constructor class for Bank Transactions Class
      */
-    public BankTransaction(int id, String name, String lastName, int accountNumber, int amount, String transactionType, String email, boolean active, String country, String telephone) {
-        this.id = id;
+    public BankTransaction(String name, String lastName, int accountNumber, double amount, String transactionType, String email, boolean active, String country, String telephone) {
         this.name = name;
         this.lastName = lastName;
         this.accountNumber = accountNumber;
@@ -72,10 +71,6 @@ public class BankTransaction {
 
     public String getTelephone() {
         return telephone;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setName(String name) {
