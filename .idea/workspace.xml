@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Listener installed">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="pom.xml updated and suite.xml created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -54,7 +53,7 @@
       <recent name="org.Globant.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml">
+  <component name="RunManager" selected="TestNG.EndpointEmptyTest">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Testing_Bank_Transactions_Final" />
       <extension name="coverage">
@@ -133,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml" />
         <item itemvalue="TestNG.EndpointEmptyTest" />
+        <item itemvalue="TestNG.C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="TestNG.EndpointEmptyTest.getUser" />
         <item itemvalue="JUnit.AppTest.testApp" />
@@ -185,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669244235075</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pom.xml updated and suite.xml created">
+      <created>1669246356480</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669246356480</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +210,7 @@
     <MESSAGE value="New class created" />
     <MESSAGE value="log4 properly installed" />
     <MESSAGE value="Listener installed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Listener installed" />
+    <MESSAGE value="pom.xml updated and suite.xml created" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated and suite.xml created" />
   </component>
 </project>
