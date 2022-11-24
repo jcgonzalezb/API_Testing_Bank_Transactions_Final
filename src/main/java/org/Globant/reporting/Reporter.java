@@ -14,7 +14,8 @@ public class Reporter {
         getLogger().info(text);
     }
 
-    public static void error(String text) {
+    public static boolean error(String text) {
         getLogger().error(text);
+        return false;
     }
 }

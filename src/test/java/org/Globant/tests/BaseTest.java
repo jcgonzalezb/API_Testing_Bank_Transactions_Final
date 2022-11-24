@@ -27,17 +27,17 @@ public class BaseTest {
     }
 
     protected int deleteTransaction(String endpoint, BankTransaction bankTransaction){
-        System.out.println(bankTransaction.getId());
         Response response = given().contentType("application/json")
                 .when()
-                .delete(endpoint + "/" + bankTransaction.getId());
-        System.out.println(response.prettyPrint());
+                .delete(endpoint + bankTransaction.getId());
         return response.getStatusCode();
     }
 
     protected boolean deleteAllTransactions(String endpoint) {
         List<BankTransaction> transactions = getAllTransactions(endpoint);
-        if (transactions.size() > 0) {
+        if (transactions.size() == 0) {
+            return Reporter.error("All Transactions located on the endpoint are already deleted.");
+        } else if (transactions.size() > 0) {
             for (int i = 0; i < transactions.size(); i++) {
                 int statusCode = deleteTransaction(endpoint, transactions.get(i));
                 if (statusCode != 200){
