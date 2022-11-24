@@ -3,7 +3,7 @@
 <suite name="API Testing Final Test suite" verbose="1">
 
 
-    <parameter name="url" value="https://637d966d9c2635df8f89fa85.mockapi.io/api/v1/bankTransactions/1"></parameter>
+    <parameter name="endpoint" value="https://637d966d9c2635df8f89fa85.mockapi.io/bankTransactions/"></parameter>
     <test name="ESPN tests">
         <classes>
             <class name="org.Globant.tests.EndpointEmptyTest"></class>
