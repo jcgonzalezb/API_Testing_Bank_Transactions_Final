@@ -3,7 +3,7 @@ package org.Globant.endpoints;
 /**
  * Class relative to the endpoint Bank Transactions
  */
-public class BankTransactions {
+public class BankTransaction {
     private int id;
     private String name;
     private String lastName;
@@ -15,10 +15,13 @@ public class BankTransactions {
     private String country;
     private String telephone;
 
+    public BankTransaction() {}
+
+
     /**
      * Constructor class for Bank Transactions Class
      */
-    public BankTransactions(int id, String name, String lastName, int accountNumber, int amount, String transactionType, String email, boolean active, String country, String telephone) {
+    public BankTransaction(int id, String name, String lastName, int accountNumber, int amount, String transactionType, String email, boolean active, String country, String telephone) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
