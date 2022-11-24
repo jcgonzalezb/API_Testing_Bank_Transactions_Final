@@ -1,5 +1,6 @@
 package org.Globant.tests;
 
+import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
@@ -8,7 +9,9 @@ import io.restassured.specification.RequestSpecification;
 import org.Globant.endpoints.BankTransaction;
 import org.Globant.reporting.Reporter;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import static io.restassured.RestAssured.given;
 
@@ -56,6 +59,34 @@ public class BaseTest {
                 .when()
                 .post(endpoint);
         return response.getStatusCode();
+    }
+
+    protected List<BankTransaction> createTransactions (int amount) {
+        List<BankTransaction> transactions = new ArrayList<>();
+
+        Faker feku = new Faker(new Locale("en-US"));
+
+        for(int i =0; i < transactions.size(); i++) {
+            transactions.add(new BankTransaction(
+                    feku.name().firstName(),
+                    feku.name().lastName(),
+                    feku.number().numberBetween(0, 999999),
+                    feku.number().randomDouble(2, 0, 10000),
+                    feku.options().option("withdrawal","payment","invoice","deposit"),
+                    feku.internet().emailAddress(),
+                    feku.random().nextBoolean(),
+                    feku.address().country(),
+                    feku.phoneNumber().cellPhone()
+            ));
+
+        }
+
+
+
+
+
+
+
     }
 
 
