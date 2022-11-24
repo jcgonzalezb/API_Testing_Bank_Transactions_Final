@@ -36,7 +36,7 @@ public class BaseTest {
     protected boolean deleteAllTransactions(String endpoint) {
         List<BankTransaction> transactions = getAllTransactions(endpoint);
         if (transactions.size() == 0) {
-            return Reporter.error("All Transactions located on the endpoint are already deleted.");
+            return Reporter.error("No Transactions were found on the endpoint.");
         } else if (transactions.size() > 0) {
             for (int i = 0; i < transactions.size(); i++) {
                 int statusCode = deleteTransaction(endpoint, transactions.get(i));
