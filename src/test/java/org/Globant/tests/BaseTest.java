@@ -27,7 +27,8 @@ public class BaseTest {
     }
 
     protected int deleteTransaction(String endpoint, BankTransaction bankTransaction){
-        Response response = given().contentType("application/json")
+        Response response = given()
+                .contentType("application/json")
                 .when()
                 .delete(endpoint + bankTransaction.getId());
         return response.getStatusCode();
@@ -47,6 +48,16 @@ public class BaseTest {
         }
         return true;
     }
+
+    protected int createTransaction(String endpoint, BankTransaction bankTransaction){
+        Response response = given()
+                .contentType("application/json")
+                .body(bankTransaction)
+                .when()
+                .post(endpoint);
+        return response.getStatusCode();
+    }
+
 
 
 
