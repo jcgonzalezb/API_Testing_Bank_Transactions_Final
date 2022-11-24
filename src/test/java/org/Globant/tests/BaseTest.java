@@ -6,6 +6,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.Globant.endpoints.BankTransaction;
+import org.Globant.reporting.Reporter;
 
 import java.util.List;
 
@@ -25,17 +26,26 @@ public class BaseTest {
         return allTransactions;
     }
 
-    protected void deleteTransaction(String endpoint, BankTransaction bankTransaction){
-        Response response = given()
-                .contentType("application/json")
+    protected int deleteTransaction(String endpoint, BankTransaction bankTransaction){
+        System.out.println(bankTransaction.getId());
+        Response response = given().contentType("application/json")
                 .when()
-                .delete(endpoint + "/" + bankTransaction + bankTransaction.getId());
+                .delete(endpoint + "/" + bankTransaction.getId());
+        System.out.println(response.prettyPrint());
+        return response.getStatusCode();
     }
 
-    protected void deleteAllTransactions() {
-
-
-
+    protected boolean deleteAllTransactions(String endpoint) {
+        List<BankTransaction> transactions = getAllTransactions(endpoint);
+        if (transactions.size() > 0) {
+            for (int i = 0; i < transactions.size(); i++) {
+                int statusCode = deleteTransaction(endpoint, transactions.get(i));
+                if (statusCode != 200){
+                    Reporter.error("Transaction cannot be deleted" + "Status code: " + statusCode);
+                }
+            }
+        }
+        return true;
     }
 
 
