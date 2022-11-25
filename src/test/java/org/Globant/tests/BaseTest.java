@@ -8,6 +8,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.Globant.endpoints.BankTransaction;
 import org.Globant.reporting.Reporter;
+import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,7 +84,7 @@ public class BaseTest {
         return transactions;
     }
 
-    protected boolean createAllTransactions(String endpoint, int amount) {
+    protected boolean uploadAllTransactions(String endpoint, int amount) {
         List<BankTransaction> transactions = createTransactions(amount);
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were created.");
