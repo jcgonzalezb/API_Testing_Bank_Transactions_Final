@@ -52,14 +52,7 @@ public class BaseTest {
         return true;
     }
 
-    protected int createTransaction(String endpoint, BankTransaction bankTransaction){
-        Response response = given()
-                .contentType("application/json")
-                .body(bankTransaction)
-                .when()
-                .post(endpoint);
-        return response.getStatusCode();
-    }
+
 
     protected List<BankTransaction> createTransactions (int amount) {
         List<BankTransaction> transactions = new ArrayList<>();
@@ -83,6 +76,44 @@ public class BaseTest {
         return transactions;
     }
 
+    private boolean checkForDuplicates(List emailList) {
+        for (int i = 0; i < emailList.size(); i++) {
+            for (int j = i + 1; j < emailList.size(); j++) {
+                if (emailList.get(i) != null && emailList.get(i).equals(emailList.get(j))) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    protected boolean checkDuplicateEmailList(List transactionsList) {
+        List<BankTransaction> transactions = transactionsList;
+        List<String> emailList = new ArrayList<>();
+        for (int i = 0; i < transactions.size(); i++) {
+            emailList.add(transactions.get(i).getEmail());
+        }
+        if (checkForDuplicates(emailList) == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    protected boolean checkDuplicateEmail(String endpoint) {
+        List<BankTransaction> transactions = getAllTransactions(endpoint);
+        return checkDuplicateEmailList(transactions);
+    }
+
+    protected int createTransaction(String endpoint, BankTransaction bankTransaction){
+        Response response = given()
+                .contentType("application/json")
+                .body(bankTransaction)
+                .when()
+                .post(endpoint);
+        return response.getStatusCode();
+    }
+
     protected boolean uploadAllTransactions(String endpoint, int amount) {
         List<BankTransaction> transactions = createTransactions(amount);
         if (transactions.size() == 0) {
@@ -98,29 +129,10 @@ public class BaseTest {
         return true;
     }
 
-    private boolean checkForDuplicates(List emailList) {
-        for (int i = 0; i < emailList.size(); i++) {
-            for (int j = i + 1; j < emailList.size(); j++) {
-                if (emailList.get(i) != null && emailList.get(i).equals(emailList.get(j))) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
 
-    protected boolean checkDuplicateEmail(String endpoint) {
-        List<BankTransaction> transactions = getAllTransactions(endpoint);
-        List<String> emailList = new ArrayList<>();
-        for (int i = 0; i < transactions.size(); i++) {
-            emailList.add(transactions.get(i).getEmail());
-        }
-        if (checkForDuplicates(emailList) == true) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+
+
+
 
     protected int updateTransaction(String endpoint, BankTransaction bankTransaction){
         Response response = given()
