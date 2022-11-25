@@ -120,7 +120,7 @@ public class BaseTest {
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were created.");
         } else if (transactions.size() > 0) {
-            if (!checkDuplicateEmailEndpoint(endpoint)) {
+            if (!checkDuplicateEmailList(transactions)) {
                 return false;
             }
             for (int i = 0; i < transactions.size(); i++) {
@@ -129,13 +129,6 @@ public class BaseTest {
                     Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
                 }
             }
-        }
-        return true;
-    }
-
-    protected boolean checkGetAllTransactions(String endpoint) {
-        if (!checkDuplicateEmailEndpoint(endpoint)) {
-            return false;
         }
         return true;
     }

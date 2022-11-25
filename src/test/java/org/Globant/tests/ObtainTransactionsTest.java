@@ -12,7 +12,7 @@ public class ObtainTransactionsTest extends BaseTest{
     public void ObtainTransactionsTest(String endpoint) {
         Reporter.info("Getting transactions :" );
         Reporter.info("Amount of transactions on the endpoint: " + getAllTransactions(endpoint).size());
-        Reporter.info("No email duplicated " + checkGetAllTransactions(endpoint));
+        Reporter.info("No email duplicated " + checkDuplicateEmailEndpoint(endpoint));
     }
 
 
