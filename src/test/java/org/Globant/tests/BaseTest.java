@@ -8,7 +8,6 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.Globant.endpoints.BankTransaction;
 import org.Globant.reporting.Reporter;
-import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -99,8 +98,39 @@ public class BaseTest {
         return true;
     }
 
+    protected int updateTransaction(String endpoint, BankTransaction bankTransaction){
+        Response response = given()
+                .contentType("application/json")
+                .body(bankTransaction)
+                .when()
+                .put(endpoint);
+        return response.getStatusCode();
+    }
 
-
+    protected boolean createUpdateInformation (String endpoint) {
+        List<BankTransaction> transactions = getAllTransactions(endpoint);
+        int min = 1;
+        int max = 10;
+        int randomId = (int) (Math.random() * (max - min + 1) + min);
+        if (transactions.size() == 0) {
+            return Reporter.error("No Transactions were found on the endpoint.");
+        } else if (transactions.size() > 0) {
+            for (int i = 0; i < transactions.size(); i++) {
+                if (transactions.get(i).getId() == randomId) {
+                    int AccountNumber = transactions.get(i).getAccountNumber();
+                    Reporter.info("The Account Number currently updating is: " + AccountNumber);
+                    transactions.get(i).setCountry("Colombia");
+                    transactions.get(i).setAmount(100);
+                    String updateEndpoint = endpoint + randomId;
+                    int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
+                    if (statusCode != 200) {
+                        Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
+                    }
+                }
+            }
+        }
+        return true;
+    }
 
     //public List<BankTransactions> getAllTransactions(String endpoint) {
     //    Response response = given().contentType("application/json").when().get(endpoint"); }

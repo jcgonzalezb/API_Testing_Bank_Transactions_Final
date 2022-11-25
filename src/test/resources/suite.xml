@@ -9,6 +9,7 @@
             <class name="org.Globant.tests.EndpointEmptyTest"></class>
             <class name="org.Globant.tests.CreateTransactionsTest"></class>
             <class name="org.Globant.tests.ObtainTransactionsTest"></class>
+            <class name="org.Globant.tests.UpdateTransactionTest"></class>
         </classes>
     </test>
 </suite>
