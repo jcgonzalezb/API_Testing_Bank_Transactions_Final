@@ -10,7 +10,7 @@ public class CreateTransactionsTest extends BaseTest {
     @Test
     public void createTransactionsTest(String endpoint) {
         Reporter.info("Checking :" );
-        // Reporter.info("Amount of transactions on the endpoint: " + getAllTransactions(endpoint).size());
+        Reporter.info("Amount of transactions on the list: " + getAllTransactions(endpoint).size());
         if (createAllTransactions(endpoint, 10)) {
             Reporter.info("All transactions were created");
         } else {

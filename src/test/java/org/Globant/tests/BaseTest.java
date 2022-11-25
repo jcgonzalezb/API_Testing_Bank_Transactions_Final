@@ -45,7 +45,7 @@ public class BaseTest {
             for (int i = 0; i < transactions.size(); i++) {
                 int statusCode = deleteTransaction(endpoint, transactions.get(i));
                 if (statusCode != 200){
-                    Reporter.error("Transaction cannot be deleted" + "Status code: " + statusCode);
+                    Reporter.error("Transaction cannot be deleted " + "Status code: " + statusCode);
                 }
             }
         }
@@ -66,7 +66,7 @@ public class BaseTest {
 
         Faker feku = new Faker(new Locale("en-US"));
 
-        for(int i =0; i < transactions.size(); i++) {
+        for(int i =0; i < amount; i++) {
             transactions.add(new BankTransaction(
                     feku.name().firstName(),
                     feku.name().lastName(),
@@ -85,6 +85,7 @@ public class BaseTest {
 
     protected boolean createAllTransactions(String endpoint, int amount) {
         List<BankTransaction> transactions = createTransactions(amount);
+        System.out.println(transactions);
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were found on the list.");
         } else if (transactions.size() > 0) {
