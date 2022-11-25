@@ -119,8 +119,10 @@ public class BaseTest {
                 if (transactions.get(i).getId() == randomId) {
                     int AccountNumber = transactions.get(i).getAccountNumber();
                     Reporter.info("The Account Number currently updating is: " + AccountNumber);
+                    transactions.get(i).setName("Thomas");
+                    transactions.get(i).setLastName("Anderson");
                     transactions.get(i).setCountry("Colombia");
-                    transactions.get(i).setAmount(100);
+                    transactions.get(i).setAmount(10000.01);
                     String updateEndpoint = endpoint + randomId;
                     int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
                     if (statusCode != 200) {
