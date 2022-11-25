@@ -85,9 +85,8 @@ public class BaseTest {
 
     protected boolean createAllTransactions(String endpoint, int amount) {
         List<BankTransaction> transactions = createTransactions(amount);
-        System.out.println(transactions);
         if (transactions.size() == 0) {
-            return Reporter.error("No Transactions were found on the list.");
+            return Reporter.error("No Transactions were created.");
         } else if (transactions.size() > 0) {
             for (int i = 0; i < transactions.size(); i++) {
                 int statusCode = createTransaction(endpoint, transactions.get(i));
