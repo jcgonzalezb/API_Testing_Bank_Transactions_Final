@@ -150,18 +150,18 @@ public class BaseTest {
                 }
             int accountNumberUpdate = accountNumbers.get(randomIndex);
             for (int i = 0; i < transactions.size(); i++) {
-                    if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
-                        Reporter.info("The Account Number currently updating is: " + accountNumberUpdate);
-                        transactions.get(i).setName("Thomas");
-                        transactions.get(i).setLastName("Anderson");
-                        transactions.get(i).setCountry("Colombia");
-                        transactions.get(i).setAmount(10000.01);
-                        String updateEndpoint = endpoint +  transactions.get(i).getId() ;
-                        int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
-                        if (statusCode != 200) {
-                            Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
-                        }
+                if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
+                    Reporter.info("The Account Number currently updating is: " + accountNumberUpdate);
+                    transactions.get(i).setName("Thomas");
+                    transactions.get(i).setLastName("Anderson");
+                    transactions.get(i).setCountry("Colombia");
+                    transactions.get(i).setAmount(10000.01);
+                    String updateEndpoint = endpoint +  transactions.get(i).getId() ;
+                    int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
+                    if (statusCode != 200) {
+                        Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
                     }
+                }
             }
         }
         return true;
