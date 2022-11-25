@@ -138,38 +138,34 @@ public class BaseTest {
 
     protected boolean createUpdateInformation (String endpoint) {
         List<BankTransaction> transactions = getAllTransactions(endpoint);
-        int min = 1;
-        int max = 10;
-        int randomId = (int) (Math.random() * (max - min + 1) + min);
+        List<Integer> accountNumbers = new ArrayList<>();
+        int min = 0;
+        int max = 9;
+        int randomIndex = (int) (Math.random() * (max - min + 1) + min);
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were found on the endpoint.");
         } else if (transactions.size() > 0) {
             for (int i = 0; i < transactions.size(); i++) {
-                if (transactions.get(i).getId() == randomId) {
-                    int AccountNumber = transactions.get(i).getAccountNumber();
-                    Reporter.info("The Account Number currently updating is: " + AccountNumber);
-                    transactions.get(i).setName("Thomas");
-                    transactions.get(i).setLastName("Anderson");
-                    transactions.get(i).setCountry("Colombia");
-                    transactions.get(i).setAmount(10000.01);
-                    String updateEndpoint = endpoint + randomId;
-                    int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
-                    if (statusCode != 200) {
-                        Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
-                    }
+                accountNumbers.add(transactions.get(i).getAccountNumber());
                 }
+            int accountNumberUpdate = accountNumbers.get(randomIndex);
+            for (int i = 0; i < transactions.size(); i++) {
+                    if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
+                        Reporter.info("The Account Number currently updating is: " + accountNumberUpdate);
+                        transactions.get(i).setName("Thomas");
+                        transactions.get(i).setLastName("Anderson");
+                        transactions.get(i).setCountry("Colombia");
+                        transactions.get(i).setAmount(10000.01);
+                        String updateEndpoint = endpoint +  transactions.get(i).getId() ;
+                        int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
+                        if (statusCode != 200) {
+                            Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
+                        }
+                    }
             }
         }
         return true;
     }
-
-
-
-
-
-
-
-
 
     //public List<BankTransactions> getAllTransactions(String endpoint) {
     //    Response response = given().contentType("application/json").when().get(endpoint"); }
