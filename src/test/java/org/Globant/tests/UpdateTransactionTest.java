@@ -9,7 +9,7 @@ public class UpdateTransactionTest extends BaseTest{
     @Parameters({"endpoint"})
     @Test
     public void UpdateTransactionTest(String endpoint) {
-        Reporter.info("Checking :" );
+        Reporter.info("Updating transaction: " );
         Reporter.info("Amount of transactions on the endpoint: " + getAllTransactions(endpoint).size());
         if (createUpdateInformation(endpoint) == true) {
             Reporter.info("A transaction was Updated");

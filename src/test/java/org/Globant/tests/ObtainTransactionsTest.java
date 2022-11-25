@@ -10,9 +10,9 @@ public class ObtainTransactionsTest extends BaseTest{
     @Parameters({"endpoint"})
     @Test
     public void ObtainTransactionsTest(String endpoint) {
-        Reporter.info("Checking :" );
+        Reporter.info("Getting transactions :" );
         Reporter.info("Amount of transactions on the endpoint: " + getAllTransactions(endpoint).size());
-        Reporter.info("No email duplicated " + checkDuplicateEmail(endpoint));
+        Reporter.info("No email duplicated " + checkGetAllTransactions(endpoint));
     }
 
 

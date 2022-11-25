@@ -9,7 +9,7 @@ public class CreateTransactionsTest extends BaseTest {
     @Parameters({"endpoint"})
     @Test
     public void createTransactionsTest(String endpoint) {
-        Reporter.info("Checking :" );
+        Reporter.info("Creating transactions :" );
         if (uploadAllTransactions(endpoint, 10)) {
             Reporter.info("All transactions were created");
         } else {
