@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Java faker implemented">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/endpoints/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/endpoints/BankTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,25 +57,28 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml">
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Testing_Bank_Transactions_Final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.Globant.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.Globant" />
-      <option name="MAIN_CLASS_NAME" value="org.Globant.AppTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API_Testing_Bank_Transactions_Final" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/suite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateTransactionsTest.createTransactionsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="API_Testing_Bank_Transactions_Final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Globant.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.Globant.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.Globant.tests.CreateTransactionsTest" />
+      <option name="METHOD_NAME" value="createTransactionsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -136,10 +141,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/juancamilo.gonzalez/IdeaProjects/API_Testing_Bank_Transactions_Final/src/test/resources/suite.xml" />
+        <item itemvalue="TestNG.CreateTransactionsTest.createTransactionsTest" />
         <item itemvalue="TestNG.EndpointEmptyTest" />
         <item itemvalue="TestNG.EndpointEmptyTest.verifyEndpointIsEmpty" />
         <item itemvalue="TestNG.EndpointEmptyTest.getUser" />
-        <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669328432046</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Java faker implemented">
+      <created>1669328752018</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669328752018</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

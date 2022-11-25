@@ -7,6 +7,7 @@
     <test name="ESPN tests">
         <classes>
             <class name="org.Globant.tests.EndpointEmptyTest"></class>
+            <class name="org.Globant.tests.CreateTransactionsTest"></class>
         </classes>
     </test>
 </suite>

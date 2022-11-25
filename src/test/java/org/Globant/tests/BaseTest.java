@@ -83,7 +83,20 @@ public class BaseTest {
         return transactions;
     }
 
-
+    protected boolean createAllTransactions(String endpoint, int amount) {
+        List<BankTransaction> transactions = createTransactions(amount);
+        if (transactions.size() == 0) {
+            return Reporter.error("No Transactions were found on the list.");
+        } else if (transactions.size() > 0) {
+            for (int i = 0; i < transactions.size(); i++) {
+                int statusCode = createTransaction(endpoint, transactions.get(i));
+                if (statusCode != 201){
+                    Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
+                }
+            }
+        }
+        return true;
+    }
 
 
 
