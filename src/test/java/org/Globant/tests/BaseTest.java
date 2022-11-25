@@ -101,13 +101,11 @@ public class BaseTest {
     private boolean checkForDuplicates(List emailList) {
         for (int i = 0; i < emailList.size(); i++) {
             for (int j = i + 1; j < emailList.size(); j++) {
-                System.out.println(emailList.get(i));
                 if (emailList.get(i) != null && emailList.get(i).equals(emailList.get(j))) {
                     return false;
                 }
             }
         }
-        System.out.println(emailList);
         return true;
     }
 
@@ -123,9 +121,6 @@ public class BaseTest {
             return false;
         }
     }
-
-
-
 
     protected int updateTransaction(String endpoint, BankTransaction bankTransaction){
         Response response = given()
