@@ -92,7 +92,7 @@ public class BaseTest {
             emailList.add(transactions.get(i).getEmail());
         }
         System.out.println(emailList);
-        if (checkForDuplicates(emailList) == true) {
+        if (checkForDuplicates(emailList)) {
             return true;
         }
         return false;
