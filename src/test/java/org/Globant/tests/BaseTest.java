@@ -34,10 +34,12 @@ public class BaseTest {
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.request(Method.GET, "");
         int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode, 200, "Transactions were not obtained properly.");
+        Assert.assertEquals(statusCode, 200,
+                "Transactions were not obtained properly.");
 
         JsonPath jsonPathEvaluator = response.jsonPath();
-        List<BankTransaction> allTransactions = jsonPathEvaluator.getList("", BankTransaction.class);
+        List<BankTransaction> allTransactions = jsonPathEvaluator.getList("",
+                BankTransaction.class);
         return allTransactions;
     }
 
@@ -70,7 +72,8 @@ public class BaseTest {
             for (int i = 0; i < transactions.size(); i++) {
                 int statusCode = deleteTransaction(endpoint, transactions.get(i));
                 if (statusCode != 200){
-                    Reporter.error("Transaction cannot be deleted " + "Status code: " + statusCode);
+                    Reporter.error("Transaction cannot be deleted. " +
+                            "Status code: " + statusCode);
                 }
             }
         }
@@ -186,7 +189,8 @@ public class BaseTest {
             for (int i = 0; i < transactions.size(); i++) {
                 int statusCode = createTransaction(endpoint, transactions.get(i));
                 if (statusCode != 201){
-                    Reporter.error("Transaction cannot be posted" + "Status code: " + statusCode);
+                    Reporter.error("Transaction cannot be posted. " +
+                            "Status code: " + statusCode);
                 }
             }
         }
@@ -244,7 +248,7 @@ public class BaseTest {
                     String updateEndpoint = endpoint +  transactions.get(i).getId() ;
                     int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
                     if (statusCode != 200) {
-                        Reporter.error("The transaction cannot be updated" +
+                        Reporter.error("The transaction cannot be updated. " +
                                 "Status code: " + statusCode);
                     }
                 }
