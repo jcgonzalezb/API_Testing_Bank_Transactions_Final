@@ -160,7 +160,6 @@ public class BaseTest {
             if (!accountNumbers.contains(accountNumberUpdate)) {
                 return false;
             }
-            System.out.println(accountNumberUpdate);
             for (int i = 0; i < transactions.size(); i++) {
                 if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
                     Reporter.info("The transaction with Account Number " + accountNumberUpdate + " will be updated.");
