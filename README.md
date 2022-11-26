@@ -56,7 +56,7 @@ This project was developed on IntelliJ IDEA 2022.2.3 (Community Edition) and JDK
 
 ### API Endpoint
 
-This is the available endpoint for this project.
+This is the available endpoint for this program.
 
 https://mockapi.io/projects/637d966d9c2635df8f89fa86
 
@@ -111,8 +111,7 @@ Process finished with exit code 0
 
 ## Bugs
 
-Only integers must be entered when options are show during the execution of the program. Otherwise, the program will finish immediately.
-
+No known bugs at this time.
 
 ## Author
 
