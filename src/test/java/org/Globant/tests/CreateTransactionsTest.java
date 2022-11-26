@@ -5,11 +5,22 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+/**
+ * Represents the POJO initialization with random data and duplicate email check test.
+ *
+ * @author juancamilo.gonzalez
+ * @version 1.0
+ */
 public class CreateTransactionsTest extends BaseTest {
 
+    /** Creates on the endpoint ten bank transactions based on random data. All client´s
+     * emails should be different.
+     * @result Ten bank transactions on the endpoint based on random data with
+     * ten different client´s emails.
+     */
     @Parameters({"endpoint"})
     @Test
-    public void createTransactionsTest(String endpoint) {
+    public void createRandomTransactions(String endpoint) {
         Reporter.info("Initializing the POJO and creating ten transactions using random data.");
         Reporter.info("Checking new transactions, looking for duplicate emails.");
         Assert.assertTrue(uploadAllTransactions(endpoint, 10),

@@ -5,9 +5,18 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-
+/**
+ * Represents the empty endpoint verification test.
+ *
+ * @author juancamilo.gonzalez
+ * @version 1.0
+ */
 public class EndpointEmptyTest extends BaseTest {
 
+    /** Verifies that the endpoint is empty (If it has any data, it uses the DELETE request to
+     * clean it and leaves it empty).
+     * @result Empty endpoint.
+     * */
     @Parameters({"endpoint"})
     @Test
     public void verifyEndpointIsEmpty(String endpoint) {
