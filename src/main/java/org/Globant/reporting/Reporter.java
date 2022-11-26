@@ -33,7 +33,7 @@ public class Reporter {
     /**
      * Shows an error message to the user.
      * @param text The text used to show an error message to the user.
-     * @return false when during the program execution an error is found.
+     * @return false when an error is found during the execution of a program.
      */
     public static boolean error(String text) {
         getLogger().error(text);
