@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Listener and suite.xml updated">
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Javadoc applied to the BankTransaction.java file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/endpoints/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/endpoints/BankTransaction.java" afterDir="false" />
     </list>
@@ -455,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669473903987</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Javadoc applied to the BankTransaction.java file.">
+      <created>1669477302411</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1669477302411</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -470,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pom.xml updated" />
     <MESSAGE value="Reporter updated" />
     <MESSAGE value="get response updated" />
     <MESSAGE value="pom.xml and suite.xml updated" />
@@ -495,7 +501,8 @@
     <MESSAGE value="Initial test files deleted and Reporter updated" />
     <MESSAGE value="Reporter and Listener updated" />
     <MESSAGE value="Listener and suite.xml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Listener and suite.xml updated" />
+    <MESSAGE value="Javadoc applied to the BankTransaction.java file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc applied to the BankTransaction.java file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

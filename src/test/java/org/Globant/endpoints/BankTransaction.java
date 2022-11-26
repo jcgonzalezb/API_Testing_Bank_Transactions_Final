@@ -135,7 +135,7 @@ public class BankTransaction {
     }
 
     /** Gets the status of the bank transaction.
-     * @return A boolean representing status of the bank transaction.
+     * @return A boolean representing the status of the bank transaction.
      */
     public boolean isActive() {
         return active;
@@ -155,39 +155,65 @@ public class BankTransaction {
         return telephone;
     }
 
-
+    /** Sets the customer’s name.
+     * @param name A string containing the customer’s name.
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /** Sets the customer’s last name.
+     * @param lastName A string containing the customer’s last name.
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /** Sets the account number associated to the bank transaction.
+     * @param accountNumber An integer containing the account number associated to the bank transaction.
+     */
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 
+    /** Sets the amount of money associated to the bank transaction.
+     * @param amount A double containing the amount of money associated to the bank transaction.
+     */
     public void setAmount(double amount) {
         this.amount = amount;
     }
 
+    /** Sets the type of transaction.
+     * @param transactionType A string containing the type of transaction.
+     */
     public void setTransactionType(String transactionType) {
         this.transactionType = transactionType;
     }
 
+    /** Sets the customer's email.
+     * @param email A string containing the customer's email.
+     */
     public void setEmail(String email) {
         this.email = email;
     }
 
+    /** Sets the status of the bank transaction.
+     * @param active A boolean containing the status of the bank transaction.
+     */
     public void setActive(boolean active) {
         this.active = active;
     }
 
+    /** Sets the customer's country of residence.
+     * @param country A string containing the customer's country of residence.
+     */
     public void setCountry(String country) {
         this.country = country;
     }
 
+    /** Sets the customer's cellphone number.
+     * @param telephone A string containing the customer's cellphone number.
+     */
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
