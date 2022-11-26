@@ -12,11 +12,13 @@ public class EndpointEmptyTest extends BaseTest {
     @Test
     public void verifyEndpointIsEmpty(String endpoint) {
         Reporter.info("Checking endpoint:" );
-        Reporter.info("Amount of transactions on the endpoint: " + getAllTransactions(endpoint).size());
+        Reporter.info("Amount of transactions on the endpoint: "
+                + getAllTransactions(endpoint).size());
 
         Assert.assertTrue(deleteAllTransactions(endpoint),
                 "All transaction on the endpoint were not deleted");
-        Reporter.info("Amount of transactions on the endpoint: " + getAllTransactions(endpoint).size());
+        Reporter.info("Amount of transactions on the endpoint: "
+                + getAllTransactions(endpoint).size());
         Reporter.info("The endpoint is empty");
     }
 }
