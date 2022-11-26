@@ -15,12 +15,12 @@ public class CreateTransactionsTest extends BaseTest {
 
     /** Creates on the endpoint ten bank transactions based on random data. All client´s
      * emails should be different.
-     * @result Ten bank transactions on the endpoint based on random data with
-     * ten different client´s emails.
+     * @result Ten bank transactions on the endpoint based on random data with no client´s
+     * emails duplicated.
      */
     @Parameters({"endpoint"})
     @Test
-    public void createRandomTransactions(String endpoint) {
+    public void createRandomTransactionsTest(String endpoint) {
         Reporter.info("Initializing the POJO and creating ten transactions using random data.");
         Reporter.info("Checking new transactions, looking for duplicate emails.");
         Assert.assertTrue(uploadAllTransactions(endpoint, 10),

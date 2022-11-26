@@ -6,11 +6,21 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+/**
+ * Represents to obtain all bank transaction from endpoint and duplicate email check test.
+ *
+ * @author juancamilo.gonzalez
+ * @version 1.0
+ */
 public class ObtainTransactionsTest extends BaseTest{
 
+    /** Gets all the bank transaction available on the endpoint and checks if all client´s
+     * emails are different.
+     * @result A list of bank transactions from the endpoint with no client´s emails duplicated.
+     * */
     @Parameters({"endpoint"})
     @Test
-    public void ObtainTransactionsTest(String endpoint) {
+    public void getTransactionsTest(String endpoint) {
         Reporter.info("Getting all transactions from the endpoint...");
         Reporter.info("Amount of transactions on the endpoint: "
                 + getAllTransactions(endpoint).size() + " transactions.");

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Test 4 updated.">
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Javadoc applied to tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,13 +156,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669242242859</updated>
-    </task>
-    <task id="LOCAL-00003" summary="New class created">
-      <created>1669243050559</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1669243050559</updated>
     </task>
     <task id="LOCAL-00004" summary="log4 properly installed">
       <created>1669243802324</created>
@@ -498,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669482303938</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Javadoc applied to tests">
+      <created>1669484310985</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1669484310985</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pom.xml and suite.xml updated" />
     <MESSAGE value="deleteTransaction method fixed" />
     <MESSAGE value="BankTransaction class renamed" />
     <MESSAGE value="Testing delete all transactions" />
@@ -538,7 +539,8 @@
     <MESSAGE value="Javadoc applied to the BankTransaction.java file." />
     <MESSAGE value="Javadoc applied to the BaseTest.java file." />
     <MESSAGE value="Test 4 updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 4 updated." />
+    <MESSAGE value="Javadoc applied to tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc applied to tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

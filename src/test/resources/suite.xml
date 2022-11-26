@@ -22,7 +22,7 @@
             <class name="org.Globant.tests.ObtainTransactionsTest"></class>
         </classes>
     </test>
-    <test name="Update a transaction using an existing account number test">
+    <test name="Update an existing account number test">
         <classes>
             <class name="org.Globant.tests.UpdateTransactionTest"></class>
         </classes>
