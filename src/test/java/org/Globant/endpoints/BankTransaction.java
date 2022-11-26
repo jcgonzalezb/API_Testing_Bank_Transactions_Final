@@ -75,7 +75,9 @@ public class BankTransaction {
      * @param telephone The customer's cellphone number.
      *
      */
-    public BankTransaction(String name, String lastName, int accountNumber, double amount, String transactionType, String email, boolean active, String country, String telephone) {
+    public BankTransaction(String name, String lastName, int accountNumber, double amount,
+                           String transactionType, String email, boolean active, String country,
+                           String telephone) {
         this.name = name;
         this.lastName = lastName;
         this.accountNumber = accountNumber;
@@ -170,14 +172,16 @@ public class BankTransaction {
     }
 
     /** Sets the account number associated to the bank transaction.
-     * @param accountNumber An integer containing the account number associated to the bank transaction.
+     * @param accountNumber An integer containing the account number associated
+     * to the bank transaction.
      */
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 
     /** Sets the amount of money associated to the bank transaction.
-     * @param amount A double containing the amount of money associated to the bank transaction.
+     * @param amount A double containing the amount of money associated
+     * to the bank transaction.
      */
     public void setAmount(double amount) {
         this.amount = amount;
