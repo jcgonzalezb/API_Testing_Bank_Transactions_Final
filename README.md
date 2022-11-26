@@ -33,7 +33,7 @@ manage response data not just the body). Please make sure you use JavaDoc.
 * [License](#license)
 
 ##  Environment
-This project was developed on IntelliJ IDEA 2022.2.3 (Community Edition) and JDK 11.
+This project was developed on IntelliJ IDEA 2022.2.3 (Community Edition), JDK 11.0.16.1 and Maven 3.8.6.
 
 ### File Descriptions
 - ```pom.xml``` contains information about the project and configuration details used by Maven to build the project.
