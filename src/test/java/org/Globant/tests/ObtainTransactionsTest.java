@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  * @author juancamilo.gonzalez
  * @version 1.0
  */
-public class ObtainTransactionsTest extends BaseTest{
+public class ObtainTransactionsTest extends BaseTest {
 
     /** Gets all the bank transaction available on the endpoint and checks if all client´s
      * emails are different.

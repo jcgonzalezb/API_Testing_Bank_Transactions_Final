@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class UpdateTransactionTest extends BaseTest {
 
     /** Updates the account number of a bank transaction on the endpoint.
-     * @result A bank transaction has a new account number.
+     * @result A bank transaction on the endpoint has a new account number.
      * */
     @Parameters({"endpoint"})
     @Test

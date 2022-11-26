@@ -10,8 +10,7 @@
 
   <name>API_Testing_Bank_Transactions_Final</name>
   <description>A simple API_Testing_Bank_Transactions_Final.</description>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://637d966d9c2635df8f89fa85.mockapi.io/bankTransactions/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

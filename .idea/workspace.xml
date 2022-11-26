@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Javadoc applied to tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669242242859</updated>
-    </task>
-    <task id="LOCAL-00004" summary="log4 properly installed">
-      <created>1669243802324</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1669243802324</updated>
     </task>
     <task id="LOCAL-00005" summary="Listener installed">
       <created>1669244235075</created>
@@ -500,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669484310985</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Javadoc applied to tests">
+      <created>1669485169991</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485169991</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,20 +540,5 @@
     <MESSAGE value="Test 4 updated." />
     <MESSAGE value="Javadoc applied to tests" />
     <option name="LAST_COMMIT_MESSAGE" value="Javadoc applied to tests" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java</url>
-          <line>21</line>
-          <properties class="org.Globant.tests.EndpointEmptyTest" method="verifyEndpointIsEmpty">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
