@@ -220,7 +220,9 @@ public class BaseTest {
         List<Integer> accountNumbers = new ArrayList<>();
         int min = 0;
         int max = 9;
+        int maxAccountNumber = 999999;
         int randomIndex = (int) (Math.random() * (max - min + 1) + min);
+        int newAccountNumber = (int) (Math.random() * (maxAccountNumber - min + 1) + min);
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were found on the endpoint.");
         } else if (transactions.size() > 0) {
@@ -234,10 +236,8 @@ public class BaseTest {
             for (int i = 0; i < transactions.size(); i++) {
                 if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
                     Reporter.info("The transaction with Account Number " + accountNumberUpdate + " will be updated.");
-                    transactions.get(i).setName("Thomas");
-                    transactions.get(i).setLastName("Anderson");
-                    transactions.get(i).setCountry("Colombia");
-                    transactions.get(i).setAmount(10000.01);
+                    transactions.get(i).setAccountNumber(newAccountNumber);
+                    Reporter.info("The Account Number " + accountNumberUpdate + " was replaced by " + newAccountNumber + ".");
                     String updateEndpoint = endpoint +  transactions.get(i).getId() ;
                     int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
                     if (statusCode != 200) {
