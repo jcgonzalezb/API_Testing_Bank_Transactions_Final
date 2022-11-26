@@ -235,13 +235,17 @@ public class BaseTest {
             }
             for (int i = 0; i < transactions.size(); i++) {
                 if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
-                    Reporter.info("The transaction with Account Number " + accountNumberUpdate + " will be updated.");
+                    Reporter.info("The transaction with Account Number " +
+                            accountNumberUpdate + " will be updated.");
                     transactions.get(i).setAccountNumber(newAccountNumber);
-                    Reporter.info("The Account Number " + accountNumberUpdate + " was replaced by " + newAccountNumber + ".");
+                    Reporter.info("The Account Number " + accountNumberUpdate +
+                            " was replaced by the new account number " +
+                            newAccountNumber + ".");
                     String updateEndpoint = endpoint +  transactions.get(i).getId() ;
                     int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
                     if (statusCode != 200) {
-                        Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
+                        Reporter.error("The transaction cannot be updated" +
+                                "Status code: " + statusCode);
                     }
                 }
             }
