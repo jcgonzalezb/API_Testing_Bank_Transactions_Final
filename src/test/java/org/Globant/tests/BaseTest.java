@@ -210,7 +210,7 @@ public class BaseTest {
     }
 
     /** Updates the account number of a bank transaction created on the endpoint.
-     * The HTTP POST request is applied.
+     * The HTTP PUT request is applied.
      * @param endpoint The endpoint in which the bank transactions are located.
      * @return True if the bank transaction is updated successfully, otherwise
      * the return is false.
