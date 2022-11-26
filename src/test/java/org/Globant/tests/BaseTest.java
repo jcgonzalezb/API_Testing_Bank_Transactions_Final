@@ -16,10 +16,19 @@ import java.util.Locale;
 
 import static io.restassured.RestAssured.given;
 
-
+/**
+ * Represents the base test used for all the tests implemented.
+ *
+ * @author juancamilo.gonzalez
+ * @version 1.0
+ */
 public class BaseTest {
 
-
+    /** Gets all the bank transaction available on the endpoint.
+     * The HTTP GET request is applied.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @return A list of all the bank transactions on the endpoint.
+     */
     protected List<BankTransaction> getAllTransactions (String endpoint){
         RestAssured.baseURI = endpoint;
         RequestSpecification httpRequest = RestAssured.given();
@@ -32,14 +41,27 @@ public class BaseTest {
         return allTransactions;
     }
 
-    protected int deleteTransaction(String endpoint, BankTransaction bankTransaction){
+    /** Deletes a bank transaction on the endpoint.
+     * The HTTP DELETE request is applied.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @param transaction The transaction to be deleted.
+     * @return An integer representing the status code obtained after the delete request
+     * is applied.
+     */
+    protected int deleteTransaction(String endpoint, BankTransaction transaction){
         Response response = given()
                 .contentType("application/json")
                 .when()
-                .delete(endpoint + bankTransaction.getId());
+                .delete(endpoint + transaction.getId());
         return response.getStatusCode();
     }
 
+    /** Deletes all bank transactions on the endpoint.
+     * The HTTP DELETE request is applied.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @return True if all the bank transactions are deleted successfully, otherwise
+     * the return is false.
+     */
     protected boolean deleteAllTransactions(String endpoint) {
         List<BankTransaction> transactions = getAllTransactions(endpoint);
         if (transactions.size() == 0) {
@@ -55,6 +77,11 @@ public class BaseTest {
         return true;
     }
 
+    /** Initializes the POJO with ten random data to create ten bank transactions.
+     * @param amount The amount of bank transactions to be created. In this case,
+     * ten bank transactions.
+     * @return A list of ten bank transactions created based on random data.
+     */
     protected List<BankTransaction> createTransactions (int amount) {
         List<BankTransaction> transactions = new ArrayList<>();
 
@@ -77,10 +104,14 @@ public class BaseTest {
         return transactions;
     }
 
-    private boolean checkForDuplicates(List emailList) {
-        for (int i = 0; i < emailList.size(); i++) {
-            for (int j = i + 1; j < emailList.size(); j++) {
-                if (emailList.get(i) != null && emailList.get(i).equals(emailList.get(j))) {
+    /** Checks a list and looks for duplicate items.
+     * @param items A list of items.
+     * @return True if no duplicate items found in the list, otherwise the return is false.
+     */
+    private boolean checkForDuplicates(List items) {
+        for (int i = 0; i < items.size(); i++) {
+            for (int j = i + 1; j < items.size(); j++) {
+                if (items.get(i) != null && items.get(i).equals(items.get(j))) {
                     return false;
                 }
             }
@@ -88,6 +119,11 @@ public class BaseTest {
         return true;
     }
 
+    /** Checks a bank transactions list and looks for duplicate emails.
+     * @param transactionsList A list of bank transactions.
+     * @return True if there are no duplicate emails in the list,
+     * otherwise the return is false.
+     */
     protected boolean checkDuplicateEmailList(List transactionsList) {
         List<BankTransaction> transactions = transactionsList;
         List<String> emailList = new ArrayList<>();
@@ -100,6 +136,12 @@ public class BaseTest {
         return false;
     }
 
+    /** Checks a bank transactions list extracted from the endpoint and looks
+     * for duplicate emails.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @return True if there are no duplicate emails on the endpoint,
+     * otherwise the return is false.
+     */
     protected boolean checkDuplicateEmailEndpoint(String endpoint) {
         List<BankTransaction> transactions = getAllTransactions(endpoint);
         if (checkDuplicateEmailList(transactions)) {
@@ -108,15 +150,31 @@ public class BaseTest {
         return false;
     }
 
-    protected int createTransaction(String endpoint, BankTransaction bankTransaction){
+    /** Posts a bank transaction on the endpoint.
+     * The HTTP POST request is applied.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @param transaction The transaction to be posted.
+     * @return An integer representing the status code obtained after the post request
+     * is applied.
+     */
+
+    protected int createTransaction(String endpoint, BankTransaction transaction){
         Response response = given()
                 .contentType("application/json")
-                .body(bankTransaction)
+                .body(transaction)
                 .when()
                 .post(endpoint);
         return response.getStatusCode();
     }
 
+    /** Posts all bank transactions created on the endpoint.
+     * The HTTP POST request is applied.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @param amount The amount of bank transactions to be created. In this case,
+     * ten bank transactions.
+     * @return True if all the bank transactions are posted successfully, otherwise
+     * the return is false.
+     */
     protected boolean uploadAllTransactions(String endpoint, int amount) {
         List<BankTransaction> transactions = createTransactions(amount);
         if (transactions.size() == 0) {
@@ -135,15 +193,28 @@ public class BaseTest {
         return true;
     }
 
-    protected int updateTransaction(String endpoint, BankTransaction bankTransaction){
+    /** Updates a bank transaction on the endpoint.
+     * The HTTP PUT request is applied.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @param transaction The transaction to be updated.
+     * @return An integer representing the status code obtained after the put request
+     * is applied.
+     */
+    protected int updateTransaction(String endpoint, BankTransaction transaction){
         Response response = given()
                 .contentType("application/json")
-                .body(bankTransaction)
+                .body(transaction)
                 .when()
                 .put(endpoint);
         return response.getStatusCode();
     }
 
+    /** Updates the account number of a bank transaction created on the endpoint.
+     * The HTTP POST request is applied.
+     * @param endpoint The endpoint in which the bank transactions are located.
+     * @return True if the bank transaction is updated successfully, otherwise
+     * the return is false.
+     */
     protected boolean createUpdateInformation (String endpoint) {
         List<BankTransaction> transactions = getAllTransactions(endpoint);
         List<Integer> accountNumbers = new ArrayList<>();
