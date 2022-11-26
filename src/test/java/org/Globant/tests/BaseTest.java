@@ -38,9 +38,7 @@ public class BaseTest {
                 "Transactions were not obtained properly.");
 
         JsonPath jsonPathEvaluator = response.jsonPath();
-        List<BankTransaction> allTransactions = jsonPathEvaluator.getList("",
-                BankTransaction.class);
-        return allTransactions;
+        return jsonPathEvaluator.getList("", BankTransaction.class);
     }
 
     /** Deletes a bank transaction on the endpoint.
@@ -69,9 +67,9 @@ public class BaseTest {
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were found on the endpoint.");
         } else if (transactions.size() > 0) {
-            for (int i = 0; i < transactions.size(); i++) {
-                int statusCode = deleteTransaction(endpoint, transactions.get(i));
-                if (statusCode != 200){
+            for (BankTransaction transaction : transactions) {
+                int statusCode = deleteTransaction(endpoint, transaction);
+                if (statusCode != 200) {
                     Reporter.error("Transaction cannot be deleted. " +
                             "Status code: " + statusCode);
                 }
@@ -130,8 +128,8 @@ public class BaseTest {
     protected boolean checkDuplicateEmailList(List transactionsList) {
         List<BankTransaction> transactions = transactionsList;
         List<String> emailList = new ArrayList<>();
-        for (int i = 0; i < transactions.size(); i++) {
-            emailList.add(transactions.get(i).getEmail());
+        for (BankTransaction transaction : transactions) {
+            emailList.add(transaction.getEmail());
         }
         return checkForDuplicates(emailList);
     }
@@ -164,25 +162,25 @@ public class BaseTest {
         return response.getStatusCode();
     }
 
-    /** Posts all bank transactions created on the endpoint.
+    /**
+     * Posts all bank transactions created on the endpoint.
      * The HTTP POST request is applied.
+     *
      * @param endpoint The endpoint in which the bank transactions are located.
-     * @param amount The amount of bank transactions to be created. In this case,
-     * ten bank transactions.
      * @return True if all the bank transactions are posted successfully, otherwise
      * the return is false.
      */
-    protected boolean uploadAllTransactions(String endpoint, int amount) {
-        List<BankTransaction> transactions = createTransactions(amount);
+    protected boolean uploadAllTransactions(String endpoint) {
+        List<BankTransaction> transactions = createTransactions(10);
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were created.");
         } else if (transactions.size() > 0) {
             if (!checkDuplicateEmailList(transactions)) {
                 return false;
             }
-            for (int i = 0; i < transactions.size(); i++) {
-                int statusCode = createTransaction(endpoint, transactions.get(i));
-                if (statusCode != 201){
+            for (BankTransaction transaction : transactions) {
+                int statusCode = createTransaction(endpoint, transaction);
+                if (statusCode != 201) {
                     Reporter.error("Transaction cannot be posted. " +
                             "Status code: " + statusCode);
                 }
@@ -224,23 +222,23 @@ public class BaseTest {
         if (transactions.size() == 0) {
             return Reporter.error("No Transactions were found on the endpoint.");
         } else if (transactions.size() > 0) {
-            for (int i = 0; i < transactions.size(); i++) {
-                accountNumbers.add(transactions.get(i).getAccountNumber());
-                }
+            for (BankTransaction transaction : transactions) {
+                accountNumbers.add(transaction.getAccountNumber());
+            }
             int accountNumberUpdate = accountNumbers.get(randomIndex);
             if (!accountNumbers.contains(accountNumberUpdate)) {
                 return false;
             }
-            for (int i = 0; i < transactions.size(); i++) {
-                if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
+            for (BankTransaction transaction : transactions) {
+                if (transaction.getAccountNumber() == accountNumberUpdate) {
                     Reporter.info("The transaction with Account Number " +
                             accountNumberUpdate + " will be updated.");
-                    transactions.get(i).setAccountNumber(newAccountNumber);
+                    transaction.setAccountNumber(newAccountNumber);
                     Reporter.info("The Account Number " + accountNumberUpdate +
                             " was replaced by the new account number " +
                             newAccountNumber + ".");
-                    String updateEndpoint = endpoint +  transactions.get(i).getId() ;
-                    int statusCode = updateTransaction(updateEndpoint, transactions.get(i));
+                    String updateEndpoint = endpoint + transaction.getId();
+                    int statusCode = updateTransaction(updateEndpoint, transaction);
                     if (statusCode != 200) {
                         Reporter.error("The transaction cannot be updated. " +
                                 "Status code: " + statusCode);

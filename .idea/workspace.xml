@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Small bugs fixed.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/utils/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/utils/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\juancamilo.gonzalez\IdeaProjects\API_Testing_Bank_Transactions_Final\src\test" />
@@ -155,20 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669242242859</updated>
-    </task>
-    <task id="LOCAL-00010" summary="pom.xml and suite.xml updated">
-      <created>1669308007216</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1669308007216</updated>
-    </task>
-    <task id="LOCAL-00011" summary="deleteTransaction method fixed">
-      <created>1669308060715</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1669308060715</updated>
     </task>
     <task id="LOCAL-00012" summary="BankTransaction class renamed">
       <created>1669308381546</created>
@@ -499,7 +484,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669493346216</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Small bugs fixed.">
+      <created>1669493871231</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493871231</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Small bugs fixed.">
+      <created>1669493896960</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493896960</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
