@@ -91,7 +91,6 @@ public class BaseTest {
         for (int i = 0; i < transactions.size(); i++) {
             emailList.add(transactions.get(i).getEmail());
         }
-        System.out.println(emailList);
         if (checkForDuplicates(emailList)) {
             return true;
         }
@@ -155,6 +154,10 @@ public class BaseTest {
                 accountNumbers.add(transactions.get(i).getAccountNumber());
                 }
             int accountNumberUpdate = accountNumbers.get(randomIndex);
+            if (!accountNumbers.contains(accountNumberUpdate)) {
+                return false;
+            }
+            System.out.println(accountNumberUpdate);
             for (int i = 0; i < transactions.size(); i++) {
                 if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
                     Reporter.info("The Account Number currently updating is: " + accountNumberUpdate);

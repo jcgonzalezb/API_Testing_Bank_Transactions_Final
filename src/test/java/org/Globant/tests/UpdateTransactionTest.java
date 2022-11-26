@@ -14,7 +14,7 @@ public class UpdateTransactionTest extends BaseTest{
         if (createUpdateInformation(endpoint) == true) {
             Reporter.info("A transaction was Updated");
         } else {
-            Reporter.info("Not all transactions were deleted");
+            Reporter.info("Account Number not found on endpoint");
         }
     }
 }
