@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Check emails duplicity updated">
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="EndpointEmptyTest updated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669425595359</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="EndpointEmptyTest updated.">
+      <created>1669428998481</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669428998481</updated>
+    </task>
+    <task id="LOCAL-00035" summary="EndpointEmptyTest updated.">
+      <created>1669429039985</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669429039985</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -425,7 +442,8 @@
     <MESSAGE value="check duplicate email updated." />
     <MESSAGE value="Small fixes on test done. several informative messages updated." />
     <MESSAGE value="Check emails duplicity updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check emails duplicity updated" />
+    <MESSAGE value="EndpointEmptyTest updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="EndpointEmptyTest updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

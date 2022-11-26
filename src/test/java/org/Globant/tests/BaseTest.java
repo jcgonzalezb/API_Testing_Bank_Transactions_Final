@@ -163,7 +163,7 @@ public class BaseTest {
             System.out.println(accountNumberUpdate);
             for (int i = 0; i < transactions.size(); i++) {
                 if (transactions.get(i).getAccountNumber() == accountNumberUpdate) {
-                    Reporter.info("The Account Number currently updating is: " + accountNumberUpdate);
+                    Reporter.info("The transaction with Account Number " + accountNumberUpdate + " will be updated.");
                     transactions.get(i).setName("Thomas");
                     transactions.get(i).setLastName("Anderson");
                     transactions.get(i).setCountry("Colombia");
