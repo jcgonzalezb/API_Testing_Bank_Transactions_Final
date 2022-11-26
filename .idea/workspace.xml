@@ -7,7 +7,7 @@
     <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Check emails duplicity updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/UpdateTransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -379,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669417776125</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Check emails duplicity updated">
+      <created>1669425595359</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1669425595359</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -425,7 +432,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/Globant/tests/EndpointEmptyTest.java</url>
-          <line>11</line>
+          <line>12</line>
           <properties class="org.Globant.tests.EndpointEmptyTest" method="verifyEndpointIsEmpty">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

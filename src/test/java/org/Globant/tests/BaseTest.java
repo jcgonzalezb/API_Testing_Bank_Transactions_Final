@@ -8,6 +8,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.Globant.endpoints.BankTransaction;
 import org.Globant.reporting.Reporter;
+import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +24,8 @@ public class BaseTest {
         RestAssured.baseURI = endpoint;
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.request(Method.GET, "");
+        int statusCode = response.getStatusCode();
+        Assert.assertEquals(statusCode, 200, "Transactions were not obtained properly.");
 
         JsonPath jsonPathEvaluator = response.jsonPath();
         List<BankTransaction> allTransactions = jsonPathEvaluator.getList("", BankTransaction.class);
