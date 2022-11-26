@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Represents the Reporter which is used to show messages to the user.
  *
- * @author juancamilo.Gonzalez
+ * @author juancamilo.gonzalez
  * @version 1.0
  */
 public class Reporter {

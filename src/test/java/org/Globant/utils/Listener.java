@@ -8,7 +8,7 @@ import org.testng.ITestResult;
  * Represents the Listener which is used to show messages to the user based on
  * test success or failure.
  *
- * @author juancamilo.Gonzalez
+ * @author juancamilo.gonzalez
  * @version 1.0
  */
 public class Listener implements ITestListener {
