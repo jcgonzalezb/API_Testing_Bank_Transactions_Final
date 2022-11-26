@@ -186,7 +186,7 @@ public class BaseTest {
             for (int i = 0; i < transactions.size(); i++) {
                 int statusCode = createTransaction(endpoint, transactions.get(i));
                 if (statusCode != 201){
-                    Reporter.error("Transaction cannot be created" + "Status code: " + statusCode);
+                    Reporter.error("Transaction cannot be posted" + "Status code: " + statusCode);
                 }
             }
         }
