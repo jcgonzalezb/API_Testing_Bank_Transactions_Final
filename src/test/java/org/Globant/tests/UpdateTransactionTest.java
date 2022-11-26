@@ -13,7 +13,9 @@ public class UpdateTransactionTest extends BaseTest{
         Reporter.info("Getting all transactions from the endpoint...");
         Reporter.info("Amount of transactions on the endpoint: "
                 + getAllTransactions(endpoint).size() + " transactions.");
-        Assert.assertTrue(createUpdateInformation(endpoint), "Account number not found on endpoint");
+
+        Assert.assertTrue(createUpdateInformation(endpoint),
+                "Account number not found on endpoint.");
         Reporter.info("A transaction was updated using an existing account number.");
     }
 }

@@ -177,11 +177,4 @@ public class BaseTest {
         }
         return true;
     }
-
-    //public List<BankTransactions> getAllTransactions(String endpoint) {
-    //    Response response = given().contentType("application/json").when().get(endpoint"); }
-
-    //    public boolean deleteAllTransactions(String endpoint) {
-    //  List<Boolean> deleteTransactionsStatus = new ArrayList<>();    }
-
 }

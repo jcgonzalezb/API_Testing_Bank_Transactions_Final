@@ -14,6 +14,7 @@ public class EndpointEmptyTest extends BaseTest {
         Reporter.info("Getting all transactions from the endpoint...");
         Reporter.info("Amount of transactions on the endpoint: "
                 + getAllTransactions(endpoint).size() + " transactions.");
+        Reporter.info("Deleting all transactions from the endpoint...");
         Assert.assertTrue(deleteAllTransactions(endpoint),
                 "All transaction on the endpoint were not deleted");
         Reporter.info("Amount of transactions on the endpoint: "
