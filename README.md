@@ -21,43 +21,93 @@ manage response data not just the body). Please make sure you use JavaDoc.
   - @Test 3 > Make the GET request, asserting that there are not duplicate email accounts.
   - @Test 4 > Add a test to update an existing AccountNumber
 
-      - a. Print all the professors with its data
-      - b. Print all the classes and a submenu to select a class in order to print the class data including its    teacher and students
-      - c. Create a new student and add it to an existing class
-      - d. Create a new class and add an existing teacher, existing students and its relevant data
-      - e. List all the classes in which a given student is included (hint: search by id)
-      - f. Exit
-
-
 ## Table of content
-* [Architecture](#architecture)
-    * [UML (Unified Modeling Language)](#uml)
+
 * [Environment](#environment)
     * [File Descriptions](#file-descriptions)
+    * [API Endpoint](#api-endpoint)
+* [Installation](#installation)
+* [Usage](#usage)
 * [Bugs](#bugs)
 * [Author](#author)
 * [License](#license)
-
-##  Architecture
-### UML
-![UML (Unified Modeling Language)](org/globant/university/images/UML_Globlant_University.png)
 
 ##  Environment
 This project was developed on IntelliJ IDEA 2022.2.3 (Community Edition) and JDK 11.
 
 ### File Descriptions
+- ```pom.xml``` contains information about the project and configuration details used by Maven to build the project.
 - ```src/``` contains all the classes used for this project.
-- ```data/``` contains base classes used for this project.
-- ```University.java``` contains the class University and the basic information of each University.
-- ```Course.java``` contains the class Course and the basic information of each Course.
-- ```Student.java``` contains the class Student and the basic information of each Student.
-- ```Teacher.java``` contains the class Teacher and the basic information of each Teacher.
-- ```FullTimeTeacher.java``` contains the class FullTimeTeacher and the basic information of each Full-Time Teacher.
-- ```PartTimeTeacher.java``` contains the class PartTimeTeacher and the basic information of each Part-Time Teacher.
-- ```persistance/``` contains class DataInitializer for this project.
-- ```DataInitializer.java``` contains the code to load the University, classes and student initial information.
-- ```view/``` contains class main used for this project.
-- ```Main.java``` contains the code to start execution of the Java program.
+- ```src/main/java/org/Globant/reporting``` contains the Reporter.java file.
+- ```Reporter.java``` contains the class Reporter which is used to show messages to the user.
+- ```src/test/java/org/Globant/tests``` contains all the test classes used in this project.
+- ```BaseTest.java``` contains the class base test used which is used for all the tests implemented in this project.
+- ```CreateTransactionsTest.java``` contains the class CreateTransactionsTest which represents the POJO initialization with random data and duplicate email check test.
+- ```EndpointEmptyTest.java``` contains the class EndpointEmptyTest which represents the empty endpoint verification test.
+- ```ObtainTransactionsTest.java``` contains the class ObtainTransactionsTest which represents to obtain all bank transaction from endpoint and duplicate email check test.
+- ```ObtainTransactionsTest.java``` contains the class UpdateTransactionTest which represents the update an existing account number test.
+- ```src/test/java/org/Globant/utils``` contains the Listener.java file.
+- ```Listener.java``` contains the class Listener which is used to show messages to the user based on test success or failure.
+- ```src/test/java/org/Globant/endpoints``` contains the BankTransaction.java file.
+- ```BankTransaction.java``` contains the class BankTransaction which represents a bank transaction.
+- ```src/test/resources``` contains several files needed for the correct execution of the program. 
+- ```log4j.properties``` contains the configuration for the log4j dependency.
+- ```suite.xml``` contains a set of configurations that tell testNg how to run our test cases.
+
+### API Endpoint
+
+This is the available endpoint for this project.
+
+https://mockapi.io/projects/637d966d9c2635df8f89fa86
+
+## Installation
+
+1. Clone this repository
+
+```
+Open IntelliJ -> Select Git -> Select Clone... -> Select URL and enter "https://github.com/jcgonzalezb/API_Testing_Bank_Transactions_Final" -> Click on Clone.
+```
+
+After this, the program is ready to run.
+
+## Usage
+
+1. Once the program is installed, find the suite.xml file, make right-click on this file and select "Run suite.xml".
+2. The tests inside the suite.xml will run and the results of the tests will be shown. 
+
+Here is an example of the test results.
+```
+Getting all transactions from the endpoint...
+Amount of transactions on the endpoint: 10 transactions.
+Deleting all transactions from the endpoint...
+Amount of transactions on the endpoint: 0 transactions.
+The endpoint is empty.
+Test: verifyEndpointIsEmpty [PASSED]
+Initializing the POJO and creating ten transactions using random data.
+Checking new transactions, looking for duplicate emails.
+Sending the ten transactions to the endpoint...
+All ten transactions were created on the endpoint.
+Test: createRandomTransactionsTest [PASSED]
+Getting all transactions from the endpoint...
+Amount of transactions on the endpoint: 10 transactions.
+Checking all transactions from the endpoint looking for duplicate emails
+All transactions have different emails. No duplicated emails were found.
+Test: getTransactionsTest [PASSED]
+Getting all transactions from the endpoint...
+Amount of transactions on the endpoint: 10 transactions.
+The transaction with Account Number 848225 will be updated.
+The Account Number 848225 was replaced by the new account number 149474.
+A transaction was updated using an existing account number.
+Test: updateAccountNumberTest [PASSED]
+
+===============================================
+API Testing Final Test suite
+Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
+===============================================
+
+
+Process finished with exit code 0
+```
 
 ## Bugs
 
