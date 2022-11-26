@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Small bugs fixed.">
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Initial test files deleted and Reporter updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Globant/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Globant/reporting/Reporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Globant/reporting/Reporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/utils/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/utils/Listener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669436797143</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Initial test files deleted and Reporter updated">
+      <created>1669472213003</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1669472213003</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +442,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="log4 properly installed" />
     <MESSAGE value="Listener installed" />
     <MESSAGE value="pom.xml updated and suite.xml created" />
     <MESSAGE value="pom.xml updated" />
@@ -462,7 +466,8 @@
     <MESSAGE value="EndpointEmptyTest updated." />
     <MESSAGE value="All tested reviewed and tested." />
     <MESSAGE value="Small bugs fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Small bugs fixed." />
+    <MESSAGE value="Initial test files deleted and Reporter updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial test files deleted and Reporter updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

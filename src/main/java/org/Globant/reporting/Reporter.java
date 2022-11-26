@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Represents the reporter which is used to show messages to the user.
+ * Represents the Reporter which is used to show messages to the user.
  *
  * @author juancamilo.Gonzalez
  * @version 1.0
@@ -23,7 +23,7 @@ public class Reporter {
     private static Logger getLogger() { return LoggerFactory.getLogger(Reporter.class);}
 
     /**
-     * Method used to show a text to the user.
+     * Shows a message to the user.
      * @param text The text used to show a message to the user.
      */
     public static void info(String text) {
@@ -31,7 +31,7 @@ public class Reporter {
     }
 
     /**
-     * Method used to show an error message to the user.
+     * Shows an error message to the user.
      * @param text The text used to show an error message to the user.
      * @return false when during the program execution an error is found.
      */
