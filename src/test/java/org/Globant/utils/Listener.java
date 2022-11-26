@@ -14,9 +14,8 @@ import org.testng.ITestResult;
 public class Listener implements ITestListener {
 
     /**
-     * Shows the name of the test to the user when a test is successful.
+     * Shows the name of the test and the text [PASSED] when a test is successful.
      * @param result The result of a test.
-     * @return Message showing the name of the test and the text [PASSED].
      */
     @Override
     public void onTestSuccess(ITestResult result) {
@@ -24,12 +23,11 @@ public class Listener implements ITestListener {
     }
 
     /**
-     * Shows the name of the test to the user when a test is unsuccessful.
+     * Shows the name of the test and the text [FAILED] when a test is unsuccessful.
      * @param result The result of a test.
-     * @return Message showing the name of the test and the text [FAILED].
      */
     @Override
-    public void onTestFailure(ITestResult result){
+    public void onTestFailure(ITestResult result) {
         Reporter.error("Test: " + result.getName() + " [FAILED]");
     }
 }

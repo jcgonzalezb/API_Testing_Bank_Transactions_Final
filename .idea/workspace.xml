@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Readme file improved.">
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Small bugs fixed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/ObtainTransactionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/utils/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/utils/Listener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669242242859</updated>
-    </task>
-    <task id="LOCAL-00009" summary="get response updated">
-      <created>1669298443347</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1669298443347</updated>
     </task>
     <task id="LOCAL-00010" summary="pom.xml and suite.xml updated">
       <created>1669308007216</created>
@@ -497,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669491370158</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Small bugs fixed.">
+      <created>1669493346216</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493346216</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +529,6 @@
     <MESSAGE value="Check emails duplicity updated" />
     <MESSAGE value="EndpointEmptyTest updated." />
     <MESSAGE value="All tested reviewed and tested." />
-    <MESSAGE value="Small bugs fixed." />
     <MESSAGE value="Initial test files deleted and Reporter updated" />
     <MESSAGE value="Reporter and Listener updated" />
     <MESSAGE value="Listener and suite.xml updated" />
@@ -537,6 +538,7 @@
     <MESSAGE value="Javadoc applied to tests" />
     <MESSAGE value="Readme file updated." />
     <MESSAGE value="Readme file improved." />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme file improved." />
+    <MESSAGE value="Small bugs fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Small bugs fixed." />
   </component>
 </project>

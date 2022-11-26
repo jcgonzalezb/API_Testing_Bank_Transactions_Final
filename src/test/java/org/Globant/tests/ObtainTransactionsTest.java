@@ -1,6 +1,5 @@
 package org.Globant.tests;
 
-import io.restassured.response.Response;
 import org.Globant.reporting.Reporter;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;

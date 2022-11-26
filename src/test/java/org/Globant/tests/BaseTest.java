@@ -133,10 +133,7 @@ public class BaseTest {
         for (int i = 0; i < transactions.size(); i++) {
             emailList.add(transactions.get(i).getEmail());
         }
-        if (checkForDuplicates(emailList)) {
-            return true;
-        }
-        return false;
+        return checkForDuplicates(emailList);
     }
 
     /** Checks a bank transactions list extracted from the endpoint and looks
@@ -147,10 +144,7 @@ public class BaseTest {
      */
     protected boolean checkDuplicateEmailEndpoint(String endpoint) {
         List<BankTransaction> transactions = getAllTransactions(endpoint);
-        if (checkDuplicateEmailList(transactions)) {
-            return true;
-        }
-        return false;
+        return checkDuplicateEmailList(transactions);
     }
 
     /** Posts a bank transaction on the endpoint.
