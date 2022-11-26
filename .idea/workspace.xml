@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="Small bugs fixed.">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Globant/tests/CreateTransactionsTest.java" afterDir="false" />
+    <list default="true" id="74ae76c0-8515-4f76-aae9-658a4fcd5072" name="Changes" comment="BaseTest code improved.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,13 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669242242859</updated>
-    </task>
-    <task id="LOCAL-00012" summary="BankTransaction class renamed">
-      <created>1669308381546</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1669308381546</updated>
     </task>
     <task id="LOCAL-00013" summary="Testing delete all transactions">
       <created>1669310971784</created>
@@ -498,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669493896960</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="BaseTest code improved.">
+      <created>1669494577338</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1669494577338</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Testing delete all transactions" />
     <MESSAGE value="Create transaction method created" />
     <MESSAGE value="Java faker implemented" />
     <MESSAGE value="create transactions test created" />
@@ -538,6 +537,7 @@
     <MESSAGE value="Readme file updated." />
     <MESSAGE value="Readme file improved." />
     <MESSAGE value="Small bugs fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Small bugs fixed." />
+    <MESSAGE value="BaseTest code improved." />
+    <option name="LAST_COMMIT_MESSAGE" value="BaseTest code improved." />
   </component>
 </project>
